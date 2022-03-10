@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import About from "./components/About/About";
+import Cover from "./components/Cover/Cover";
+import Footer from "./components/Footer/Footer";
+import Navbar from "./components/Navbar/Navbar";
+import ProjectCardList from "./components/ProjectCardList/ProjectCardList";
+import { project_list } from "./Utils/Projects/Projects";
+
+import Skills from "./components/Skills/Skills";
 
 function App() {
+  const [projects] = useState(project_list);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Cover />
+      <About />
+      <ProjectCardList projects={projects} />
+      <Skills />
+      <Footer />
+    </>
   );
 }
 
