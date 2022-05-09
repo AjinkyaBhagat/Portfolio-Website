@@ -34,7 +34,7 @@ const About = () => {
               <span className="mt3">
                 <a
                   className="btn btn-outline-dark btn-lg"
-                  href="https://drive.google.com/file/d/1eRQT8TzZTvBsDy_8UxBF8HL-FrO-Dv9H/view?usp=sharing"
+                  href="https://drive.google.com/file/d/10CHwZcOOSx1m7hoEW6lqFo4GedFU15ED/view?usp=sharing"
                 >
                   View Resume
                 </a>
